@@ -56,4 +56,4 @@ Este projeto é uma pagina web em HTML, TAILWIND CSS E JAVASCRIPT que permite ao
 Este projeto segue as diretrizes e estruturas propostas no [roadmap.sh](https://roadmap.sh/projects/unit-converter).
 
 - Link para o repositório do projeto: [Uniti Converter](https://github.com/ryan-junio-oliveira/unit-converter).
-- Link para o github pages: [Uniti Converter](https://github.com/ryan-junio-oliveira/unit-converter).
+- Link para o github pages: [Uniti Converter](https://ryan-junio-oliveira.github.io/unit-converter/).
