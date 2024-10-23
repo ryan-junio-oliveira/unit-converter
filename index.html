@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold text-center mb-10">Unit Converter</h1>
+
+        <!-- Length Conversion Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Length Converter</h2>
+            <form class="flex flex-col space-y-4">
+                <input type="number" name="lengthValue" placeholder="Enter value" class="p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-300">
+                <div class="flex space-x-4">
+                    <select name="fromLength" class="p-3 border rounded-lg w-full focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="millimeter">Millimeter</option>
+                        <option value="centimeter">Centimeter</option>
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                        <option value="yard">Yard</option>
+                        <option value="mile">Mile</option>
+                    </select>
+                    <select name="toLength" class="p-3 border rounded-lg w-full focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="millimeter">Millimeter</option>
+                        <option value="centimeter">Centimeter</option>
+                        <option value="meter">Meter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                        <option value="yard">Yard</option>
+                        <option value="mile">Mile</option>
+                    </select>
+                </div>
+                <button type="button" id="buttonLenghtConvert" class="bg-blue-500 text-white p-3 rounded-lg">Convert</button>
+            </form>
+            <!-- Display conversion result (example) -->
+            <p class="mt-4 text-xl font-bold">Converted value: <span id="lengthResult">N/A</span></p>
+        </section>
+
+        <!-- Weight Conversion Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Weight Converter</h2>
+            <form class="flex flex-col space-y-4">
+                <input type="number" name="weightValue" placeholder="Enter value" class="p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-300">
+                <div class="flex space-x-4">
+                    <select name="fromWeight" class="p-3 border rounded-lg w-full focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="milligram">Milligram</option>
+                        <option value="gram">Gram</option>
+                        <option value="kilogram">Kilogram</option>
+                        <option value="ounce">Ounce</option>
+                        <option value="pound">Pound</option>
+                    </select>
+                    <select name="toWeight" class="p-3 border rounded-lg w-full focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="milligram">Milligram</option>
+                        <option value="gram">Gram</option>
+                        <option value="kilogram">Kilogram</option>
+                        <option value="ounce">Ounce</option>
+                        <option value="pound">Pound</option>
+                    </select>
+                </div>
+                <button type="button" id="buttonWeightConvert" class="bg-blue-500 text-white p-3 rounded-lg">Convert</button>
+            </form>
+            <!-- Display conversion result (example) -->
+            <p class="mt-4 text-xl font-bold">Converted value: <span id="weightResult">N/A</span></p>
+        </section>
+
+        <!-- Temperature Conversion Section -->
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Temperature Converter</h2>
+            <form class="flex flex-col space-y-4">
+                <input type="number" name="temperatureValue" placeholder="Enter value" class="p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-300">
+                <div class="flex space-x-4">
+                    <select name="fromTemperature" class="p-3 border rounded-lg w-full focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                    <select name="toTemperature" class="p-3 border rounded-lg w-full focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <button type="button" id="buttonTemperatureConvert" class="bg-blue-500 text-white p-3 rounded-lg">Convert</button>
+            </form>
+            <!-- Display conversion result (example) -->
+            <p class="mt-4 text-xl font-bold">Converted value: <span id="temperatureResult">N/A</span></p>
+        </section>
+    </div>
+    <script src="lenghtConvert.js"></script>
+    <script src="weightConvert.js"></script>
+    <script src="temperatureConvert.js"></script>
+    <script src="fetch.js"></script>
+</body>
+</html>
